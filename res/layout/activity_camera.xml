@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff000000"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/preview_framelayout"
+        android:layout_width="720px"
+        android:layout_height="960px" >
+
+        <!-- android:layout_weight="1" -->
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#55000000"
+            android:padding="5dp"
+            android:text="Scanning for faces..."
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onBtnBTConnect"
+            android:text="Connect" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="n/c" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:stretchColumns="1"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Command"
+                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView6"
+		android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:text="Arduino"
+            android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+android:layout_width="0dp"
+android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="--" />
+            
+                    <TextView
+            android:id="@+id/textView7"
+android:layout_width="0dp"
+android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="--" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:minWidth="120dp"
+        android:orientation="vertical" >
+
+
+
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onBtnExtra"
+            android:text="Focus" />
+    </LinearLayout>
+
+</LinearLayout>
